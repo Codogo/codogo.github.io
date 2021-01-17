@@ -1,0 +1,23 @@
+<a href="{{ post.url | prepend: site.baseurl }}" class="post-tile blog-post {% if post.medium == 'poetry' %}poetry{% endif %}">
+	<div class="post-short">
+		<div class="post-content">
+			<header class="post-title">
+				<h1>{{ post.title }}</h1>
+				
+				<h2>{{ post.artist }}</h2>
+			</header>
+
+			{% if post.medium == 'poetry' %}
+				<div class="post-body">
+					<p>{{ post.excerpt }}</p>
+				</div>
+			{% endif %}
+		</div>
+
+		{% if post.medium != 'poetry' %}
+			<div class="post-image">
+				<img src="../assets/img/posts/{{ post.image }}" alt="{{ post.title }} Post Thumbnail">
+			</div>
+		{% endif %}
+	</div>
+</a>

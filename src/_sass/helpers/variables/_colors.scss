@@ -1,0 +1,25 @@
+// ---- Color Definitions ---- //
+
+// ---- Color Settings ---- //
+
+$color-primary: $codogo-red;
+$color-primary-dark: toblack($color-primary, 0.2);
+$color-primary-light: towhite($color-primary, 0.4);
+$color-secondary: $midgray;
+$color-secondary-dark: toblack($color-secondary, 0.4);
+$color-secondary-light: towhite($color-secondary, 0.4);
+$color-accent: $black;
+$color-accent-dark: toblack($color-accent, 0.4);
+$color-accent-light: towhite($color-accent, 0.4);
+
+$color-text: $black;
+$color-header: $color-text;
+$color-link: $color-primary;
+$color-link-active: $color-primary-dark;
+
+$color-bg: $white;
+$color-selection: $color-primary;
+
+$color-success: #5cb85c;
+$color-error: toblack(#d9534f, 0.25);
+

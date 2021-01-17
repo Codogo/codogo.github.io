@@ -1,0 +1,17 @@
+<section class="grid-logo">
+	<h2>Our clients</h2>
+
+	<div class="wrapper">
+		<div class="grid-logo">
+			{% assign clients = site.clients | sort: "order" %}
+
+			{% for client in clients %}
+				<div class="logo">
+					<div class="logo-inner">
+						<a href="{{ site.baseurl }}/clients" style="background-image: url('{{ site.baseurl }}/assets/img/clients/{{ client.slug }}/logo-dark.png'); " alt="{{ client.title }} logo"></a>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

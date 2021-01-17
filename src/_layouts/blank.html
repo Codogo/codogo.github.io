@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+	{% include html/head.html %}
+
+	<body class="{{ page.class }} {{ layout.class }} {{ page.layout }}">	
+		{{ content }}
+
+		<div class="is-xs"></div>
+		<div class="is-sm"></div>
+		<div class="is-md"></div>
+		<div class="is-lg"></div>
+	</body>
+
+</html>

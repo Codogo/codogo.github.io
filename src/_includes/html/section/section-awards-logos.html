@@ -1,0 +1,17 @@
+<section>
+	<h2>Our awards</h2>
+
+	<div class="wrapper">
+		<div class="grid-logo">
+			{% assign awards = site.awards | sort: "order" %}
+
+			{% for award in awards %}
+				<div class="logo">
+					<div class="logo-inner">
+						<div style="background-image: url('{{ site.baseurl }}/assets/img/clients/{{ client.slug }}/logo-dark.png'); " alt="{{ client.title }} logo"></div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

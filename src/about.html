@@ -1,0 +1,36 @@
+---
+layout: default
+title: Who We Are
+permalink: /about/
+slug: about
+bannerimage: "assets/img/banners/desk-3-large.jpg"
+description: Hey! We are Codogo. We build cool things, and to pay the bills we build cool things for other people. If you need help designing or developing a website/app (or you just want to say hi) get in touch!
+---
+
+<section class="banner col-2" style="background-image: url('{{ site.baseurl }}/{{ page.bannerimage }}');">
+	<div class="container">
+		<div class="content">
+			<h1>{{ page.title }}</h1>
+
+			<p>{{ page.description }}</p>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container restrict-width">
+		<p>We're an award-winning team of talented designers and full-stack developers. Together we cover all elements of digital experience provision: strategy to design; development to maintenance. We are specialists in web design, development, and user experience design, supported by digital strategy expertise.</p>
+
+		<p>Our first product, <a href="https://write.codogo.io/">Codogo Write</a>, will be heading into alpha soon, so stay tuned!</p>
+	</div>
+</section>
+
+{% include html/section/team.html %}
+
+<section class="cta">
+	<div class="container restrict-width">
+		<h2>Who makes Codogo?</h2>
+		
+		<a class="btn cta dark" href="https://codogo.io/about">Meet the team</a>
+	</div>
+</section>

@@ -1,0 +1,27 @@
+<section class="team col-3">
+	<h2 class="sec-header">The Team</h2>
+	
+
+	<div class="wrapper">
+		{% assign team = site.team | sort:"order" %}
+
+		{% for member in team %}
+			<div class="container">
+				<div class="team-member" style="background-image: url('{{ site.baseurl }}/assets/img/team/{{ member.firstname | downcase}}.jpg');">
+					<div class="info">
+						<div class="name">{{ member.firstname }} {{ member.surname }}</div>
+						
+						<div class="role">{{ member.position }} / {{ member.aspect }}</div>
+						
+						<div class="desc">{{ member.description }}</div>
+						
+						<div class="social">
+							{% if member.github %}<a href="https://github.com/{{ member.github }}"><i class="fa fa-fw fa-github-alt"></i></a>{% endif %}
+							{% if member.twitter %}<a href="https://twitter.com/{{ member.twitter }}"><i class="fa fa-fw fa-twitter"></i></a>{% endif %}
+						</div>
+					</div>					
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</section>

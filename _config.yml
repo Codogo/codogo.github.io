@@ -1,0 +1,42 @@
+#Build Settings
+destination: public
+source: src
+exclude: ['node_modules']
+
+# Site settings
+title: Codogo
+description: > # this means to ignore newlines until "baseurl:"
+  Codogo builds cool things, and to pay the bills we build cool things for other people.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://codogo.io" # the base hostname & protocol for your site
+locale: "en-GB"
+
+# Social
+email:
+  - team@codogo.io
+  - max@codogo.io
+  - freddie@codogo.io
+  - josh@codogo.io
+
+twitter-username: CodogoIO
+twitter-creator: mcclowes
+
+facebook: Codogo
+medium: Codogo
+linkedin: 10660486
+
+collections:
+  team:
+    output: true
+
+permalink: pretty
+
+  # Build settings
+markdown: kramdown
+
+# Tracker
+ga-analytics: UA-80817020-1
+google-search-console: YQs24--DxVBln2zZc8hPo1kZFoxzc2amoF6-QWkDe7k
+
+# Cookie
+cookie-color: "#ff5559"

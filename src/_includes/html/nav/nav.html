@@ -1,0 +1,25 @@
+<nav class="navbar navbar-default">
+	<div class="navbar-header">
+		<div class="icon">
+			<a class="" href="{{ site.baseurl }}/">
+				<img src="{{ site.baseurl }}/assets/img/codogo-c-white.svg"/>
+			</a>
+		</div>
+
+		<span class="dropdown-arrow">&#x25BC;</span>
+	</div>
+
+	<ul class="navbar-panel global">
+		{% include html/nav/global-nav-links.html %}
+	</ul>	
+
+	<div class="navbar-panel-button"></div>
+
+	<ul class="nav navbar-nav navbar-left">
+		{% include html/nav/nav-links.html %}
+	</ul>
+
+	<ul class="navbar-panel site">
+		{% include html/nav/nav-links.html %}
+	</ul>				
+</nav>

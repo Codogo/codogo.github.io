@@ -1,0 +1,22 @@
+---
+layout: default
+class: article
+---
+
+<section class="banner" style="background-image: url('{{ site.baseurl }}/{{ page.bannerimage }}');">
+	<div class="banner-container">
+		<div class="title container restrict-width">
+			<h1>{{ page.title }}</h1>
+
+			<h4>{{ page.subtitle }}</h4>
+		</div>
+	</div>
+</section>
+
+<section>
+	<article>
+		<div class="container restrict-width">
+			{{ content }}
+		</div>
+	</article>
+</section>

@@ -1,0 +1,25 @@
+image: codogo/pipelines-universal:latest
+
+pipelines:
+  default:
+    - step:
+        script:
+          - yarn install
+          - yarn run build build
+
+  branches:
+    master:
+      - step:
+          script:
+            - yarn install
+            - yarn run build build
+            - >
+              aws s3 sync
+              --exclude "$(cat .s3ignore)"
+              --delete
+              public/
+              s3://codogo-site-marketing-prod/
+            - >
+              aws cloudfront create-invalidation 
+              --distribution-id=E2R8S40VHWHT2G
+              --path="/*"

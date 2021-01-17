@@ -1,0 +1,7 @@
+*_site
+*.sass-cache
+*.jekyll-metadata
+node-modules
+_config.branch.yml
+node_modules
+public
