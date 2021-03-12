@@ -4,14 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "kill": "pkill node && pkill jekyll",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build-webpack": "webpack --config webpack/webpack.config.js",
     "build-jekyll": "jekyll build",
-    "build": "yarn run build-webpack && yarn run build-jekyll",
+    "build": "npm run build-webpack && npm run build-jekyll",
     "watch-webpack": "webpack --config  webpack/webpack.config.js --watch",
     "watch-jekyll": "jekyll serve --watch --trace",
-    "watch": "yarn run watch-webpack & yarn run watch-jekyll"
+    "watch": "npm run watch-webpack & npm run watch-jekyll"
   },
   "repository": {
     "type": "git",
